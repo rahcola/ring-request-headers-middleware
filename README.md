@@ -17,7 +17,8 @@ value string into a sequence. So a request map looking like:
 ```clojure
 {;...
  :headers {"accept" "text/html, application/xml; q=0.9"}
- ;...}
+ ;...
+}
 ```
 
 will become:
@@ -25,7 +26,8 @@ will become:
 ```clojure
 {;...
  :headers {"accept" ("text/html" "application/xml; q=0.9")}
- ;...}
+ ;...
+}
 ```
 
 ### Parsing
@@ -57,7 +59,8 @@ the request map:
 {;...
  :headers {"accept" "text/html, application/xml; q=0.9"
            "accept-charset" "utf-8"}
- ;...}
+ ;...
+}
 ```
 
 will become:
@@ -66,5 +69,6 @@ will become:
 {;...
  :headers {"accept" ("text/html" ["application/xml" "q=0.9"])
            "accept-charset" "utf-8"}
- ;...}
+ ;...
+}
 ```
