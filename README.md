@@ -1,7 +1,7 @@
 Ring middleware for parsing request headers.
 
-It's common for many headers to have multiple values. What Ring does
-is it catenates the values intoa single string separated by
+It's common for many headers to have multiple values. Ring
+catenates the values intoa single string separated by
 commas. Wrap-request-headers allows you parse this string.
 
 ## ring.middleware.request-headers/wrap-request-headers
